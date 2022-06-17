@@ -1,0 +1,41 @@
+@import "./mixsins.scss";
+@import "./variables.scss";
+@import "./fonts";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  overflow-x: hidden;
+  font-family: 'FONTSPRING DEMO - Cera Pro';
+}
+
+
+main{
+  flex-grow: 1;
+  min-height: 76vh;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}

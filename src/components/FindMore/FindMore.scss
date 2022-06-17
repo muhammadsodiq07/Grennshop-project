@@ -1,0 +1,167 @@
+@import "../../assets/scss/variables";
+
+.find {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.find__img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.find__summer_div {
+  position: relative;
+  width: 550px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.find__summer-titleDiv {
+  padding-top: 80px;
+}
+.find__title {
+  font-weight: 900;
+  font-size: 18px;
+  text-align: right !important;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-black;
+  margin: 0;
+  margin-bottom: 6px !important;
+}
+
+.find__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: $color-black;
+  margin-bottom: 20px !important;
+}
+
+.find__buton {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.find__btn {
+  display: flex;
+  align-items: center;
+}
+.find__line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and(max-width: 1120px) {
+  .find__img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .find__title {
+    font-size: 20px;
+  }
+  .find__text {
+    font-size: 14px;
+  }
+  .find__btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  } 
+
+  .find__summer_div {
+    width: 450px;
+  }
+}
+@media screen and(max-width: 935px) {
+  
+  .find__summer_div {
+    width: 400px;
+  }
+}
+
+@media screen and(max-width: 840px) {
+  .find__summer_div {
+    width: 350px;
+  }
+  .find__title {
+    font-size: 16px;
+  }
+  .find__text {
+    font-size: 11px;
+  }
+  .find__btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  } 
+}
+
+@media screen and(max-width: 741px) {
+
+  .find {
+    flex-direction: column !important;
+  }
+
+  
+  .find__summer_div {
+    width: 600px;
+    margin-bottom: 100px;
+  }
+  .find__title {
+    font-size: 18px;
+  }
+  .find__text {
+    font-size: 14px;
+  }
+  .find__btn {
+    padding: 4px 10px;
+    font-size: 14px;
+  } 
+}
+@media screen and(max-width: 617px) {
+  
+  .find__summer_div {
+    width: 100%;
+  }
+  .find__img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+@media screen and(max-width: 487px) {
+  .find__img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+@media screen and(max-width: 440px) {
+  .find__img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .find__summer-titleDiv {
+    padding-top: 50px !important;
+  }
+  .find__title {
+    font-size: 16px;
+  }
+  .find__text {
+    font-size: 10px;
+  }
+  .find__btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  } 
+}
+

@@ -1,0 +1,42 @@
+@import "../../../assets/scss/mixsins";
+@import "../../../assets/scss/variables";
+
+
+.pagination__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  @include item-list;
+}
+.pagination__nav {
+  padding-top: 30px;
+}
+.page-item {
+  margin-right: 6px;
+}
+.page-link {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  color: $color-black;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-btn--active;
+  }
+  &:active {
+    background-color: $color-green;
+  }
+}
+
+
+
+
+

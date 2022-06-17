@@ -1,0 +1,11 @@
+@mixin item-list {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@mixin dflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

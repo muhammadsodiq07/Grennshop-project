@@ -1,0 +1,87 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixsins";
+
+.join__list {
+  padding: 0;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.join__item {
+  @include item-list;
+}
+.join__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: $color-black;
+}
+
+.join__text {
+  width: 204px;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  line-height: 22px;
+  color: $color-black;
+}
+
+.join__desc {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: $color-black;
+}
+
+.join__input_div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.join__input {
+  padding: 12px;
+  border: 1px solid transparent;
+  background-color: $color-white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 6px;
+  outline: none;
+}
+.join__btn {
+  padding: 8px 25px;
+}
+
+
+@media screen and (max-width: 916px) {
+  .join__list {
+    flex-wrap: wrap;
+  }
+  .join__item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .join__list {
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  .join__item {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .join__input_text {
+    margin-left: 50px;
+  }
+}
+

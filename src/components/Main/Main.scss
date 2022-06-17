@@ -1,0 +1,117 @@
+@import "../../assets/scss/variables";
+
+.main {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__categories {
+  margin-right: 80px;
+}
+
+.main__type_btn {
+  display: flex;
+  align-items: center;
+}
+
+.main__prive_rangeDiv {
+  padding-top: 30px;
+}
+
+.main__price_range {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: $color-black;
+}
+
+.main__range_text {
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: $color-black;
+}
+
+.main__span_price {
+  color: $color-green;
+}
+
+.main__btn_filter {
+  margin-top: 20px;
+  padding: 6px 26px;
+}
+.main__size_div {
+  padding-top: 30px;
+}
+
+.main__size {
+  padding: 0;
+  padding-left: 14px;
+}
+
+.main__size_item {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 20px;
+}
+.main__small {
+  margin: 0;
+}
+.main__banner_div {
+  width: 250px;
+  height: 360px;
+}
+
+.main__banner_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and(max-width: 1105px) {
+  .main__categories {
+    display:none;
+  }
+}
+
+@media screen and(max-width: 968px) {
+  .main {
+    padding-top: 380px;
+  }
+
+  .plants__list {
+    justify-content: space-evenly !important;
+  }
+}
+
+@media screen and(max-width: 861px) {
+  .main__categories {
+    display:none;
+  }
+  .pagination__null {
+    display: none;
+  }
+  .pagination__nav {
+    padding-top: 0;
+    padding-left: 290px !important;  
+  }
+}
+
+@media screen and(max-width: 780px) {
+  .pagination__nav {
+    padding-left: 200px !important;  
+  }
+}
+
+@media screen and(max-width: 530px) {
+  .main {
+    padding-top: 400px;
+  }
+  .pagination__nav {
+    padding-left: 180px !important;  
+  }
+}

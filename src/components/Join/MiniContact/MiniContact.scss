@@ -1,0 +1,35 @@
+@import "../../../assets/scss/variables";
+
+.miniContact___backround {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(70, 163, 88, 0.1);
+}
+
+.miniContact {
+  display: flex;
+  align-items: center;
+}
+.miniContact__location_div {
+  margin-left: 70px;
+}
+.miniContact__loaction {
+  display: flex;
+  align-items: center;
+}
+
+.miniContact__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-black;
+  margin-left: 5px;
+}
+
+
+@media screen and (max-width: 935px) {
+  .miniContact___backround {
+    display: none;
+  }
+}

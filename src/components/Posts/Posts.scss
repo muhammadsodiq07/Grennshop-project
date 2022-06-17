@@ -1,0 +1,128 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixsins";
+
+
+.post__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
+.post__item {
+  @include item-list;
+}
+
+.post__desc_div {
+  padding-left: 10px;
+}
+.post__title {
+  font-weight: 700;
+  padding-top: 100px;
+  font-size: 30px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px !important;
+  color: $color-black;
+}
+.post__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 35px !important;
+  color: $color-black;
+}
+
+.post__span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-green;
+}
+
+.post__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 4px !important;
+  color: $color-black;
+}
+
+.post__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 10px !important;
+  color: $color-black;
+}
+.post__btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: $color-black;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.green {
+  color: $color-green;
+}
+.post__green {
+  color: $color-green;
+}
+
+@media screen and (max-width: 1140px) {
+  .post__item {
+    width: 25%;
+    margin-right: 0px !important;
+  }
+}
+
+
+@media screen and (max-width: 970px) {
+  .post__item {
+    width: 40%;
+    margin-right: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  .post__list {
+    justify-content:space-evenly;
+  }
+}
+@media screen and (max-width: 728px) {
+  .post__title {
+    padding-top: 20px !important;
+  } 
+  .post__span,
+  .post__name,
+  .post__desc,
+  .post__text,
+  .post__title {
+    width: 100%;
+    font-size: 14px;
+  }
+} 
+
+@media screen and (max-width: 568px) {
+  .post__item {
+    width: 100%;
+    margin-right: 0px !important;
+    text-align: center;
+  }
+  .post__button_div {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+} 

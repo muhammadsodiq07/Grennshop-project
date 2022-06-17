@@ -1,0 +1,139 @@
+@import "../../assets/scss/mixsins";
+@import "../../assets/scss/variables";
+
+#header {
+  padding-top: 25px;
+}
+
+.header__main_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  @include dflex;
+  @include item-list;
+}
+
+.nav__item {
+  margin-right: 50px;
+}
+
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: $color-black;
+  
+  &:hover {
+    color: $color-black-one;
+  }
+}
+.nav__link::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid $color-green;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+}
+
+.nav__link:hover.nav__link::after {
+  width: 100%;
+}
+.nav__link--active {
+  font-weight: 700;
+  color: $color-black-one;
+}
+
+.nav__link--active::after {
+  width: 100%;
+}
+
+.actived {
+  color: $color-green;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  &:hover {
+    color: $color-black-one;
+  }
+}
+.actived:hover.actived::after {
+  width: 100%;
+}
+.actived::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid $color-green;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+}
+
+
+.nonactived {
+  color: #444;
+  text-decoration: none;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.heaeder__btn_icon {
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.header__shop_img {
+  object-fit: cover;
+}
+
+.header__search {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-black;
+}
+.btn {
+  padding: 7px 16px;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  color: $color-white;
+  background-color: $color-green;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-btn--hover;
+  }
+  &:active {
+    background-color: $color-btn--active;
+  }
+}
+
+.heaeder__btn_doorIcon {
+  object-fit: cover;
+  color: $color-black;
+  margin-right: 5px;
+}
+.header__login_btn {
+  display: flex;
+  align-items: center;
+}
+
+
+.header__hr {
+  margin-top: 13px;
+  border: 0.3px solid rgba(70, 163, 88, 0.5);
+}
