@@ -20,7 +20,7 @@ function Main(props) {
   };
 
   let categoryArr = ["All Plants", "New Arrivals", "Sale"];
-  let typeArr = ["All", "New Arrivals", "Sale"];
+  let typeArr = ["All Plants", "New Arrivals", "Sale"];
 
   let categoryArr2 = [
     "House Plants",
