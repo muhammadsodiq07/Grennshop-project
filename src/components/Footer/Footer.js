@@ -101,27 +101,27 @@ const Footer = () => {
           <ul className="footer__list4">
             <li className="footer__item4">
               <a className="footer__link1" href="/">
-                <img src={facebook} alt="facebook" />
+                <img className="footer__imgs" src={facebook} alt="facebook" />
               </a>
             </li>
             <li className="footer__item4">
               <a className="footer__link1" href="/">
-                <img src={instagram} alt="instagram" />
+                <img className="footer__imgs" src={instagram} alt="instagram" />
               </a>
             </li>
             <li className="footer__item4">
               <a className="footer__link1" href="/">
-                <img src={twiter} alt="twiter" />
+                <img className="footer__imgs" src={twiter} alt="twiter" />
               </a>
             </li>
             <li className="footer__item4">
               <a className="footer__link1" href="/">
-                <img src={linkiedn} alt="linkiedn" />
+                <img className="footer__imgs" src={linkiedn} alt="linkiedn" />
               </a>
             </li>
             <li className="footer__item4">
               <a className="footer__link1" href="/">
-                <img src={union} alt="union" />
+                <img className="footer__imgs" src={union} alt="union" />
               </a>
             </li>
           </ul>
