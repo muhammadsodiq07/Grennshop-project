@@ -5,7 +5,7 @@ export default function Type(props) {
   
   const typeHandler = (e) => {
     let btnValue = e.target.textContent;
-    if (btnValue === "All") {
+    if (btnValue === "All Plants") {
       props.setNewArr(props.data);
     } else if (e.target.id === "New Arrivals") {
       props.setNewArr(
